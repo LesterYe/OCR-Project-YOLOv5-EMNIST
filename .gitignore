@@ -1,1 +1,7 @@
 .Archive/
+Annotations_corrected/
+annotations_test/
+annotations_train/
+emnist_coloured_20k/
+Images_20k/
+images_coloured/
