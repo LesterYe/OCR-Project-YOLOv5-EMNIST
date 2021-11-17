@@ -1,0 +1,233 @@
+Overriding model.yaml nc=80 with nc=47
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Focus                     [3, 32, 3]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  3    156928  models.common.C3                        [128, 128, 3]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  3    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1    656896  models.common.SPP                       [512, 512, [5, 9, 13]]
+  9                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    361984  models.common.C3                        [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 24      [17, 20, 23]  1    140244  models.yolo.Detect                      [47, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+Model Summary: 283 layers, 7187604 parameters, 7187604 gradients, 16.8 GFLOPs
+Transferred 354/362 items from yolov5s.pt
+Scaled weight_decay = 0.0005
+[34m[1moptimizer:[39m[22m SGD with parameter groups 59 weight, 62 weight (no decay), 62 bias
+[34m[1malbumentations: [39m[22mversion 1.0.3 required by YOLOv5, but version 0.1.12 is currently installed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[34m[1mtrain: [39m[22mScanning '/content/drive/MyDrive/OCR Project(SMU)/labels/train' images and labels...826 found, 0 missing, 0 empty, 0 corrupted:   5% 826/16000 [03:49<1:10:08,  3.61it/s]
+Traceback (most recent call last):
+  File "/content/yolov5/utils/datasets.py", line 407, in __init__
+    assert cache['version'] == 0.4 and cache['hash'] == get_hash(self.label_files + self.img_files)
+AssertionError
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/multiprocessing/pool.py", line 733, in next
+    item = self._items.popleft()
+IndexError: pop from an empty deque
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/content/yolov5/utils/datasets.py", line 492, in cache_labels
+    for im_file, l, shape, segments, nm_f, nf_f, ne_f, nc_f, msg in pbar:
+  File "/usr/local/lib/python3.7/dist-packages/tqdm/std.py", line 1185, in __iter__
+    for obj in iterable:
+  File "/usr/lib/python3.7/multiprocessing/pool.py", line 737, in next
+    self._cond.wait(timeout)
+  File "/usr/lib/python3.7/threading.py", line 296, in wait
+    waiter.acquire()
+KeyboardInterrupt
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/content/yolov5/train.py", line 602, in <module>
+    main(opt)
+  File "/content/yolov5/train.py", line 500, in main
+    train(opt.hyp, opt, device)
+  File "/content/yolov5/train.py", line 208, in train
+    prefix=colorstr('train: '))
+  File "/content/yolov5/utils/datasets.py", line 107, in create_dataloader
+    prefix=prefix)
+  File "/content/yolov5/utils/datasets.py", line 409, in __init__
+    cache, exists = self.cache_labels(cache_path, prefix), False  # cache
+  File "/content/yolov5/utils/datasets.py", line 501, in cache_labels
+    pbar.desc = f"{desc}{nf} found, {nm} missing, {ne} empty, {nc} corrupted"
+  File "/usr/lib/python3.7/multiprocessing/pool.py", line 623, in __exit__
+    self.terminate()
+  File "/usr/lib/python3.7/multiprocessing/pool.py", line 548, in terminate
+    self._terminate()
+  File "/usr/lib/python3.7/multiprocessing/util.py", line 224, in __call__
+    res = self._callback(*self._args, **self._kwargs)
+  File "/usr/lib/python3.7/multiprocessing/pool.py", line 581, in _terminate_pool
+    cls._help_stuff_finish(inqueue, task_handler, len(pool))
+  File "/usr/lib/python3.7/multiprocessing/pool.py", line 568, in _help_stuff_finish
+    inqueue._reader.recv()
+  File "/usr/lib/python3.7/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+  File "/usr/lib/python3.7/multiprocessing/connection.py", line 407, in _recv_bytes
+    buf = self._recv(4)
+  File "/usr/lib/python3.7/multiprocessing/connection.py", line 379, in _recv
+    chunk = read(handle, remaining)
+KeyboardInterrupt
+Process ForkPoolWorker-3:
+Traceback (most recent call last):
+  File "/content/yolov5/utils/datasets.py", line 407, in __init__
+    assert cache['version'] == 0.4 and cache['hash'] == get_hash(self.label_files + self.img_files)
+AssertionError
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.7/multiprocessing/pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "/content/yolov5/utils/datasets.py", line 867, in verify_image_label
+    im = Image.open(im_file)
+  File "/usr/local/lib/python3.7/dist-packages/PIL/Image.py", line 2852, in open
+    prefix = fp.read(16)
+KeyboardInterrupt
+Process ForkPoolWorker-2:
+Traceback (most recent call last):
+  File "/content/yolov5/utils/datasets.py", line 407, in __init__
+    assert cache['version'] == 0.4 and cache['hash'] == get_hash(self.label_files + self.img_files)
+AssertionError
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/usr/lib/python3.7/multiprocessing/process.py", line 297, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.7/multiprocessing/process.py", line 99, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/lib/python3.7/multiprocessing/pool.py", line 121, in worker
+    result = (True, func(*args, **kwds))
+  File "/content/yolov5/utils/datasets.py", line 882, in verify_image_label
+    l = [x.split() for x in f.read().strip().splitlines() if len(x)]
+  File "/usr/lib/python3.7/codecs.py", line 319, in decode
+    def decode(self, input, final=False):
+KeyboardInterrupt

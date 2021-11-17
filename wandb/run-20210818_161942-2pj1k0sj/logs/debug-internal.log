@@ -1,0 +1,64 @@
+2021-08-18 16:19:43,935 INFO    MainThread:3020 [internal.py:wandb_internal():89] W&B internal server running at pid: 3020, started at: 2021-08-18 16:19:43.930145
+2021-08-18 16:19:43,939 DEBUG   HandlerThread:3020 [handler.py:handle_request():128] handle_request: check_version
+2021-08-18 16:19:43,940 INFO    WriterThread:3020 [datastore.py:open_for_write():77] open: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/run-2pj1k0sj.wandb
+2021-08-18 16:19:43,943 DEBUG   SenderThread:3020 [sender.py:send():182] send: header
+2021-08-18 16:19:43,944 DEBUG   SenderThread:3020 [sender.py:send_request():196] send_request: check_version
+2021-08-18 16:19:44,017 DEBUG   SenderThread:3020 [sender.py:send():182] send: run
+2021-08-18 16:19:44,038 INFO    SenderThread:3020 [sender.py:_maybe_setup_resume():422] checking resume status for None/YOLOv5/2pj1k0sj
+2021-08-18 16:19:44,076 DEBUG   SenderThread:3020 [git.py:repo():33] git repository is invalid
+2021-08-18 16:19:44,156 DEBUG   HandlerThread:3020 [handler.py:handle_request():128] handle_request: run_start
+2021-08-18 16:19:44,179 INFO    SenderThread:3020 [dir_watcher.py:__init__():168] watching files in: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files
+2021-08-18 16:19:44,179 INFO    SenderThread:3020 [sender.py:_start_run_threads():743] run started: 2pj1k0sj with start time 1629303583
+2021-08-18 16:19:44,180 DEBUG   SenderThread:3020 [sender.py:send():182] send: summary
+2021-08-18 16:19:44,189 INFO    SenderThread:3020 [sender.py:_save_file():873] saving file wandb-summary.json with policy end
+2021-08-18 16:19:45,181 INFO    Thread-8  :3020 [dir_watcher.py:_on_file_created():216] file/dir created: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/wandb-summary.json
+2021-08-18 16:19:45,792 DEBUG   HandlerThread:3020 [meta.py:__init__():39] meta init
+2021-08-18 16:19:45,793 DEBUG   HandlerThread:3020 [meta.py:__init__():53] meta init done
+2021-08-18 16:19:45,793 DEBUG   HandlerThread:3020 [meta.py:probe():210] probe
+2021-08-18 16:19:45,798 DEBUG   HandlerThread:3020 [git.py:repo():33] git repository is invalid
+2021-08-18 16:19:45,799 DEBUG   HandlerThread:3020 [meta.py:_save_pip():57] save pip
+2021-08-18 16:19:45,807 DEBUG   HandlerThread:3020 [meta.py:_save_pip():71] save pip done
+2021-08-18 16:19:45,808 DEBUG   HandlerThread:3020 [meta.py:probe():252] probe done
+2021-08-18 16:19:45,819 DEBUG   SenderThread:3020 [sender.py:send():182] send: files
+2021-08-18 16:19:45,820 INFO    SenderThread:3020 [sender.py:_save_file():873] saving file wandb-metadata.json with policy now
+2021-08-18 16:19:45,833 DEBUG   HandlerThread:3020 [handler.py:handle_request():128] handle_request: stop_status
+2021-08-18 16:19:45,834 DEBUG   SenderThread:3020 [sender.py:send_request():196] send_request: stop_status
+2021-08-18 16:19:45,876 DEBUG   SenderThread:3020 [sender.py:send():182] send: config
+2021-08-18 16:19:46,127 INFO    Thread-11 :3020 [upload_job.py:push():137] Uploaded file /tmp/tmp3izykknawandb/3d8hjhkc-wandb-metadata.json
+2021-08-18 16:19:46,184 INFO    Thread-8  :3020 [dir_watcher.py:_on_file_created():216] file/dir created: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/requirements.txt
+2021-08-18 16:19:46,185 INFO    Thread-8  :3020 [dir_watcher.py:_on_file_created():216] file/dir created: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/wandb-metadata.json
+2021-08-18 16:19:46,186 INFO    Thread-8  :3020 [dir_watcher.py:_on_file_created():216] file/dir created: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/output.log
+2021-08-18 16:19:50,662 INFO    Thread-8  :3020 [dir_watcher.py:_on_file_modified():229] file/dir modified: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/output.log
+2021-08-18 16:19:53,673 INFO    Thread-8  :3020 [dir_watcher.py:_on_file_modified():229] file/dir modified: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/output.log
+2021-08-18 16:20:00,877 DEBUG   HandlerThread:3020 [handler.py:handle_request():128] handle_request: stop_status
+2021-08-18 16:20:00,878 DEBUG   SenderThread:3020 [sender.py:send_request():196] send_request: stop_status
+2021-08-18 16:20:06,735 INFO    Thread-8  :3020 [dir_watcher.py:_on_file_modified():229] file/dir modified: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/output.log
+2021-08-18 16:20:08,742 INFO    Thread-8  :3020 [dir_watcher.py:_on_file_modified():229] file/dir modified: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/output.log
+2021-08-18 16:20:13,862 DEBUG   SenderThread:3020 [sender.py:send():182] send: stats
+2021-08-18 16:20:15,795 INFO    Thread-8  :3020 [dir_watcher.py:_on_file_modified():229] file/dir modified: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/config.yaml
+2021-08-18 16:20:15,942 DEBUG   HandlerThread:3020 [handler.py:handle_request():128] handle_request: stop_status
+2021-08-18 16:20:15,942 DEBUG   SenderThread:3020 [sender.py:send_request():196] send_request: stop_status
+2021-08-18 16:20:16,798 INFO    Thread-8  :3020 [dir_watcher.py:_on_file_modified():229] file/dir modified: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/output.log
+2021-08-18 16:20:18,842 INFO    Thread-8  :3020 [dir_watcher.py:_on_file_modified():229] file/dir modified: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/output.log
+2021-08-18 16:20:30,990 DEBUG   HandlerThread:3020 [handler.py:handle_request():128] handle_request: stop_status
+2021-08-18 16:20:30,990 DEBUG   SenderThread:3020 [sender.py:send_request():196] send_request: stop_status
+2021-08-18 16:20:44,482 DEBUG   SenderThread:3020 [sender.py:send():182] send: stats
+2021-08-18 16:20:49,013 WARNING MainThread:3020 [internal.py:is_dead():365] Internal process exiting, parent pid 2999 disappeared
+2021-08-18 16:20:49,014 ERROR   MainThread:3020 [internal.py:wandb_internal():141] Internal process shutdown.
+2021-08-18 16:20:49,484 INFO    WriterThread:3020 [datastore.py:close():281] close: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/run-2pj1k0sj.wandb
+2021-08-18 16:20:49,484 INFO    SenderThread:3020 [sender.py:finish():979] shutting down sender
+2021-08-18 16:20:49,486 INFO    HandlerThread:3020 [handler.py:finish():677] shutting down handler
+2021-08-18 16:20:49,486 INFO    SenderThread:3020 [dir_watcher.py:finish():282] shutting down directory watcher
+2021-08-18 16:20:49,705 INFO    SenderThread:3020 [dir_watcher.py:finish():312] scan: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files
+2021-08-18 16:20:49,706 INFO    SenderThread:3020 [dir_watcher.py:finish():318] scan save: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/config.yaml config.yaml
+2021-08-18 16:20:49,707 INFO    SenderThread:3020 [dir_watcher.py:finish():318] scan save: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/wandb-summary.json wandb-summary.json
+2021-08-18 16:20:49,713 INFO    SenderThread:3020 [dir_watcher.py:finish():318] scan save: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/requirements.txt requirements.txt
+2021-08-18 16:20:49,718 INFO    SenderThread:3020 [dir_watcher.py:finish():318] scan save: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/wandb-metadata.json wandb-metadata.json
+2021-08-18 16:20:49,723 INFO    SenderThread:3020 [dir_watcher.py:finish():318] scan save: /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/output.log output.log
+2021-08-18 16:20:49,735 INFO    SenderThread:3020 [file_pusher.py:finish():177] shutting down file pusher
+2021-08-18 16:20:49,736 INFO    SenderThread:3020 [file_pusher.py:join():182] waiting for file pusher
+2021-08-18 16:20:50,010 INFO    Thread-13 :3020 [upload_job.py:push():137] Uploaded file /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/wandb-summary.json
+2021-08-18 16:20:50,022 INFO    Thread-12 :3020 [upload_job.py:push():137] Uploaded file /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/config.yaml
+2021-08-18 16:20:50,032 INFO    Thread-15 :3020 [upload_job.py:push():137] Uploaded file /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/output.log
+2021-08-18 16:20:50,037 INFO    Thread-14 :3020 [upload_job.py:push():137] Uploaded file /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_161942-2pj1k0sj/files/requirements.txt
+2021-08-18 16:20:50,783 INFO    MainThread:3020 [internal.py:handle_exit():76] Internal process exited

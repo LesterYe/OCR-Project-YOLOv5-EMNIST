@@ -1,0 +1,24 @@
+2021-08-18 16:09:55,439 INFO    MainThread:2856 [wandb_setup.py:_flush():69] setting env: {}
+2021-08-18 16:09:55,440 WARNING MainThread:2856 [wandb_setup.py:_flush():69] could not save program above cwd: /content/yolov5/train.py
+2021-08-18 16:09:55,440 INFO    MainThread:2856 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-08-18 16:09:55,441 INFO    MainThread:2856 [wandb_init.py:_log_setup():342] Logging user logs to /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_160955-30lapbw9/logs/debug.log
+2021-08-18 16:09:55,442 INFO    MainThread:2856 [wandb_init.py:_log_setup():343] Logging internal logs to /content/drive/MyDrive/OCR Project(SMU)/wandb/run-20210818_160955-30lapbw9/logs/debug-internal.log
+2021-08-18 16:09:55,442 INFO    MainThread:2856 [wandb_init.py:init():375] calling init triggers
+2021-08-18 16:09:55,442 INFO    MainThread:2856 [wandb_init.py:init():382] wandb.init called with sweep_config: {}
+config: {'weights': 'yolov5s.pt', 'cfg': '/content/yolov5/models/yolov5s.yaml', 'data': '/content/drive/MyDrive/OCR Project(SMU)/emnist_data.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.2, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0, 'copy_paste': 0.0}, 'epochs': 3, 'batch_size': 32, 'imgsz': 640, 'rect': False, 'resume': False, 'nosave': False, 'noval': False, 'noautoanchor': False, 'evolve': None, 'bucket': '', 'cache': None, 'image_weights': False, 'device': '', 'multi_scale': False, 'single_cls': False, 'adam': False, 'sync_bn': False, 'workers': 8, 'project': 'runs/train', 'entity': None, 'name': '/content/drive/MyDrive/OCR Project(SMU)/yolo_emnisttest_det', 'exist_ok': False, 'quad': False, 'linear_lr': False, 'label_smoothing': 0.0, 'upload_dataset': False, 'bbox_interval': -1, 'save_period': -1, 'artifact_alias': 'latest', 'local_rank': -1, 'freeze': 0, 'save_dir': '/content/drive/MyDrive/OCR Project(SMU)/yolo_emnisttest_det2'}
+2021-08-18 16:09:55,443 INFO    MainThread:2856 [wandb_init.py:init():424] starting backend
+2021-08-18 16:09:55,443 INFO    MainThread:2856 [backend.py:_multiprocessing_setup():72] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-08-18 16:09:55,462 INFO    MainThread:2856 [backend.py:ensure_launched():135] starting backend process...
+2021-08-18 16:09:55,475 INFO    MainThread:2856 [backend.py:ensure_launched():140] started backend process with pid: 2875
+2021-08-18 16:09:55,485 INFO    MainThread:2856 [wandb_init.py:init():429] backend started and connected
+2021-08-18 16:09:55,505 INFO    MainThread:2856 [wandb_init.py:init():477] updated telemetry
+2021-08-18 16:09:55,516 INFO    MainThread:2856 [wandb_init.py:init():500] communicating current version
+2021-08-18 16:09:56,454 INFO    MainThread:2856 [wandb_init.py:init():505] got version response 
+2021-08-18 16:09:56,454 INFO    MainThread:2856 [wandb_init.py:init():513] communicating run to backend with 30 second timeout
+2021-08-18 16:09:56,580 INFO    MainThread:2856 [wandb_init.py:init():540] starting run threads in backend
+2021-08-18 16:09:58,281 INFO    MainThread:2856 [wandb_run.py:_console_start():1584] atexit reg
+2021-08-18 16:09:58,287 INFO    MainThread:2856 [wandb_run.py:_redirect():1458] redirect: SettingsConsole.REDIRECT
+2021-08-18 16:09:58,288 INFO    MainThread:2856 [wandb_run.py:_redirect():1463] Redirecting console.
+2021-08-18 16:09:58,295 INFO    MainThread:2856 [wandb_run.py:_redirect():1519] Redirects installed.
+2021-08-18 16:09:58,295 INFO    MainThread:2856 [wandb_init.py:init():565] run started, returning control to user process
+2021-08-18 16:09:58,312 INFO    MainThread:2856 [wandb_run.py:_config_callback():826] config_cb None None {'data_dict': {'train': '/content/drive/MyDrive/OCR Project(SMU)/images/train', 'val': '/content/drive/MyDrive/OCR Project(SMU)/images/val', 'test': '/content/drive/MyDrive/OCR Project(SMU)/images/test', 'nc': 47, 'names': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'd', 'e', 'f', 'g', 'h', 'n', 'q', 'r', 't']}}

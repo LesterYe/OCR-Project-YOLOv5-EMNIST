@@ -1,0 +1,21 @@
+{
+    "os": "Linux-5.4.104+-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.7.11",
+    "heartbeatAt": "2021-08-26T19:35:50.655560",
+    "startedAt": "2021-08-26T19:35:42.520204",
+    "docker": null,
+    "gpu": "Tesla K80",
+    "gpu_count": 1,
+    "cpu_count": 2,
+    "cuda": "11.0.228",
+    "args": [
+        "-f",
+        "/root/.local/share/jupyter/runtime/kernel-c0e8efd0-7cc3-43ac-84ce-dfa5483a64d8.json"
+    ],
+    "state": "running",
+    "program": "Object%20Detection.ipynb",
+    "colab": "https://colab.research.google.com/drive/1ClGgf52DAGURKj10Ew0bTp1O_fbH_Cse",
+    "host": "3ff3d82d3580",
+    "username": "root",
+    "executable": "/usr/bin/python3"
+}

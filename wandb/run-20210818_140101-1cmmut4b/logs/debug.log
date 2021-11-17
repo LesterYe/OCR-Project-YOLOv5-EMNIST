@@ -1,0 +1,102 @@
+2021-08-18 14:01:01,860 INFO    MainThread:1215 [wandb_setup.py:_flush():69] setting env: {}
+2021-08-18 14:01:01,861 WARNING MainThread:1215 [wandb_setup.py:_flush():69] could not save program above cwd: /content/yolov5/train.py
+2021-08-18 14:01:01,861 INFO    MainThread:1215 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-08-18 14:01:01,862 INFO    MainThread:1215 [wandb_init.py:_log_setup():342] Logging user logs to /content/drive/My Drive/OCR Project(SMU)/wandb/run-20210818_140101-1cmmut4b/logs/debug.log
+2021-08-18 14:01:01,862 INFO    MainThread:1215 [wandb_init.py:_log_setup():343] Logging internal logs to /content/drive/My Drive/OCR Project(SMU)/wandb/run-20210818_140101-1cmmut4b/logs/debug-internal.log
+2021-08-18 14:01:01,863 INFO    MainThread:1215 [wandb_init.py:init():375] calling init triggers
+2021-08-18 14:01:01,863 INFO    MainThread:1215 [wandb_init.py:init():382] wandb.init called with sweep_config: {}
+config: {'weights': 'yolov5s.pt', 'cfg': '/content/yolov5/models/yolov5s.yaml', 'data': '/content/drive/MyDrive/OCR Project(SMU)/emnist_data.yaml', 'hyp': {'lr0': 0.01, 'lrf': 0.2, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 0.05, 'cls': 0.5, 'cls_pw': 1.0, 'obj': 1.0, 'obj_pw': 1.0, 'iou_t': 0.2, 'anchor_t': 4.0, 'fl_gamma': 0.0, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0, 'copy_paste': 0.0}, 'epochs': 10, 'batch_size': 64, 'imgsz': 640, 'rect': False, 'resume': False, 'nosave': False, 'noval': False, 'noautoanchor': False, 'evolve': None, 'bucket': '', 'cache': None, 'image_weights': False, 'device': '', 'multi_scale': False, 'single_cls': False, 'adam': False, 'sync_bn': False, 'workers': 8, 'project': 'runs/train', 'entity': None, 'name': 'yolo_emnist_det', 'exist_ok': False, 'quad': False, 'linear_lr': False, 'label_smoothing': 0.0, 'upload_dataset': False, 'bbox_interval': -1, 'save_period': -1, 'artifact_alias': 'latest', 'local_rank': -1, 'freeze': 0, 'save_dir': 'runs/train/yolo_emnist_det4'}
+2021-08-18 14:01:01,863 INFO    MainThread:1215 [wandb_init.py:init():424] starting backend
+2021-08-18 14:01:01,863 INFO    MainThread:1215 [backend.py:_multiprocessing_setup():72] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-08-18 14:01:01,879 INFO    MainThread:1215 [backend.py:ensure_launched():135] starting backend process...
+2021-08-18 14:01:01,890 INFO    MainThread:1215 [backend.py:ensure_launched():140] started backend process with pid: 1235
+2021-08-18 14:01:01,900 INFO    MainThread:1215 [wandb_init.py:init():429] backend started and connected
+2021-08-18 14:01:01,903 INFO    MainThread:1215 [wandb_init.py:init():477] updated telemetry
+2021-08-18 14:01:01,910 INFO    MainThread:1215 [wandb_init.py:init():500] communicating current version
+2021-08-18 14:01:02,765 INFO    MainThread:1215 [wandb_init.py:init():505] got version response 
+2021-08-18 14:01:02,766 INFO    MainThread:1215 [wandb_init.py:init():513] communicating run to backend with 30 second timeout
+2021-08-18 14:01:02,879 INFO    MainThread:1215 [wandb_init.py:init():540] starting run threads in backend
+2021-08-18 14:01:04,449 INFO    MainThread:1215 [wandb_run.py:_console_start():1584] atexit reg
+2021-08-18 14:01:04,452 INFO    MainThread:1215 [wandb_run.py:_redirect():1458] redirect: SettingsConsole.REDIRECT
+2021-08-18 14:01:04,453 INFO    MainThread:1215 [wandb_run.py:_redirect():1463] Redirecting console.
+2021-08-18 14:01:04,455 INFO    MainThread:1215 [wandb_run.py:_redirect():1519] Redirects installed.
+2021-08-18 14:01:04,457 INFO    MainThread:1215 [wandb_init.py:init():565] run started, returning control to user process
+2021-08-18 14:01:04,472 INFO    MainThread:1215 [wandb_run.py:_config_callback():826] config_cb None None {'data_dict': {'train': '/content/drive/MyDrive/OCR Project(SMU)/images/train', 'val': '/content/drive/MyDrive/OCR Project(SMU)/images/val', 'test': '/content/drive/MyDrive/OCR Project(SMU)/images/test', 'nc': 47, 'names': ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'a', 'b', 'd', 'e', 'f', 'g', 'h', 'n', 'q', 'r', 't']}}
+2021-08-18 14:07:30,906 INFO    MainThread:1215 [wandb_run.py:_atexit_cleanup():1554] got exitcode: 255
+2021-08-18 14:07:30,911 INFO    MainThread:1215 [wandb_run.py:_restore():1526] restore
+2021-08-18 14:07:33,126 INFO    MainThread:1215 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 834
+  total_bytes: 834
+}
+
+2021-08-18 14:07:33,273 INFO    MainThread:1215 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 834
+  total_bytes: 834
+}
+
+2021-08-18 14:07:34,216 INFO    MainThread:1215 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 4
+}
+pusher_stats {
+  uploaded_bytes: 834
+  total_bytes: 10843
+}
+
+2021-08-18 14:07:34,319 INFO    MainThread:1215 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 18513
+  total_bytes: 18513
+}
+
+2021-08-18 14:07:34,422 INFO    MainThread:1215 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 18513
+  total_bytes: 18513
+}
+
+2021-08-18 14:07:34,526 INFO    MainThread:1215 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 18513
+  total_bytes: 18513
+}
+
+2021-08-18 14:07:34,628 INFO    MainThread:1215 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 18513
+  total_bytes: 18513
+}
+
+2021-08-18 14:07:34,730 INFO    MainThread:1215 [wandb_run.py:_wait_for_finish():1676] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 18513
+  total_bytes: 18513
+}
+
+2021-08-18 14:07:34,833 INFO    MainThread:1215 [wandb_run.py:_wait_for_finish():1676] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 18513
+  total_bytes: 18513
+}
+
+2021-08-18 14:07:36,285 INFO    MainThread:1215 [wandb_run.py:_show_files():1898] logging synced files
